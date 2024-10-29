@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Warna latar belakang yang sangat terang */
+    color: #333;
+}
+
+/* Header */
+.main-container {
+    background: #ffffff; /* Warna putih */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+nav {
+    margin: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555; /* Warna abu-abu */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #333; /* Warna lebih gelap saat hover */
+}
+
+/* Section Home */
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #ffffff; /* Warna putih */
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.pre-title {
+    font-size: 18px;
+    font-weight: 300;
+    color: #777; /* Warna abu-abu lebih terang */
+}
+
+.home-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.home-left p {
+    margin: 20px 0;
+    color: #444; /* Warna abu-abu gelap untuk teks */
+}
+
+.btn {
+    background-color: grey; /* coksu */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #696968; /* Warna coksu lebih gelap saat hover */
+}
+
+.home-right {
+    flex: 1;
+    text-align: center;
+}
+
+.home-right img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section About */
+#about {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Warna latar belakang yang sangat terang */
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+    text-align: center;
+}
+
+.about-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333; /* Warna teks gelap */
+}
+
+.about-container p {
+    margin: 15px 0;
+    color: #444; /* Warna abu-abu gelap untuk teks */
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.skill-box {
+    background-color: #ffffff; /* Warna putih untuk kotak skill */
+    border: 1px solid #ffffff; /* Warna abu-abu terang untuk border */
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 150px; /* Lebar kotak */
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.skill-box:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan saat hover */
+    transform: translateY(-3px); /* Efek angkat saat hover */
+}
+
+/* Section Experience & Skills */
+#experience-skills {
+    padding: 60px 20px;
+    background-color: #ffffff; /* Warna latar belakang yang lebih menarik */
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333; /* Warna teks gelap */
+    font-weight: 700; /* Menebalkan teks */
+}
+
+.experience-section, .awards-section, .skills-section {
+    margin-bottom: 40px;
+    text-align: left; /* Teks rata kiri untuk bagian ini */
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #474747; /* Warna gelap untuk judul */
+    border-bottom: 2px solid #4f5253; /* Garis bawah berwarna biru */
+    display: inline-block; /* Membuat garis bawah hanya di bawah judul */
+    padding-bottom: 5px; /* Ruang di bawah judul */
+}
+
+.experience-item {
+    background-color: #ffffff; /* Warna putih untuk kotak pengalaman */
+    border: 1px solid #e0e0e0; /* Border abu-abu terang */
+    border-radius: 5px;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 600px; /* Lebar maksimum kotak pengalaman */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Transisi untuk efek hover */
+}
+
+.experience-item:hover {
+    transform: translateY(-5px); /* Efek angkat saat hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover */
+}
+
+.experience-item h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #4f5253; /* Warna biru untuk nama posisi */
+}
+
+.experience-item span {
+    font-size: 14px;
+    color: #7f8c8d; /* Warna abu-abu untuk tahun */
+    display: block; /* Membuat tahun di baris terpisah */
+    margin-bottom: 10px; /* Ruang di bawah tahun */
+}
+
+ul {
+    list-style-type: disc; /* Tanda bullet untuk list */
+    padding-left: 20px; /* Ruang di sebelah kiri list */
+}
+
+.skills-section h4 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #4f5253; /* Warna biru untuk subjudul keterampilan */
+}
+
+.skills-section p {
+    font-size: 16px;
+    color: #444; /* Warna abu-abu gelap untuk teks keterampilan */
+    margin-bottom: 10px; /* Ruang di bawah teks keterampilan */
+}
+
+/* Section Contact */
+#contact {
+    background-color: #f4f4f4; /* Warna latar belakang abu-abu terang */
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 800px; /* Lebar maksimum kontainer */
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333; /* Warna teks gelap */
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666; /* Warna teks abu-abu */
+    margin-bottom: 30px;
+}
+
+.contact-info, .social-media {
+    background-color: #fff; /* Warna putih untuk kotak info */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3, .social-media h3 {
+    font-size: 22px;
+    color: #333; /* Warna teks gelap */
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Menyusun item secara horizontal */
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media a img {
+    width: 30px; /* Ukuran ikon */
+    transition: transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.social-media a:hover img {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
